@@ -1,0 +1,21 @@
+W=1
+while W==1:
+    print("Welcome to the speedy calculator!")
+    X=int(input("Enter the first number: "))
+    Y=int(input("Enter the second number: "))
+    A= int(input("Choose the operation you want to perform: 1 for addition, 2 for subtraction, 3 for multiplication, 4 for division: "))
+    if A ==1:
+        print("The result of addition is: ", X + Y)
+    elif A ==2:
+        print("The result of subtraction is: ", X - Y)
+    elif A ==3:
+        print("The result of multiplication is: ", X * Y)
+    elif A ==4:
+        if Y != 0:
+            print("The result of division is: ", X / Y)
+        else:
+            print("Error: Division by zero is not allowed.")
+    W=int(input("Do you want to perform another calculation? Enter 1 for Yes or 0 for No: "))
+if W == 0:
+    print("Thank you for using the speedy calculator! Goodbye!")
+    print("(:")
